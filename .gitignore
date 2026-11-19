@@ -23,3 +23,8 @@ dados/privado/
 .next/
 out/
 .vercel/
+
+# sessao local
+.claude/
+next-env.d.ts
+*.tsbuildinfo

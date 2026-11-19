@@ -1,0 +1,97 @@
+{
+  "_leia_me": "Um template por combinação intenção × tipo de imóvel. Editável sem mexer no código. obrigatorios = campos que o chat pergunta se faltarem; padroes = valor assumido quando a pessoa diz 'tanto faz'; faixas = limites aceitos; perguntas = texto e opções clicáveis; refino = atributos preferidos na pergunta de refino (o motor ainda escolhe pelo que melhor divide os resultados). Tipo sem template próprio usa o 'base' da intenção.",
+  "templates": [
+    {
+      "id": "aluguel-apartamento", "intencao": "alugar", "tipo": "apartamento",
+      "obrigatorios": ["localizacao", "orcamento.max", "porte.quartos_min"],
+      "padroes": { "orcamento.base": "aluguel", "porte.quartos_min": 0 },
+      "faixas": { "orcamento.max": [500, 60000], "porte.area_min": [15, 1000] },
+      "perguntas": {
+        "localizacao": { "texto": "Em que região você quer morar?", "opcoes": "dos_resultados" },
+        "orcamento.max": { "texto": "Até quanto de aluguel por mês?", "opcoes": [2000, 3000, 4000, 6000] },
+        "porte.quartos_min": { "texto": "Quantos quartos, no mínimo?", "opcoes": [1, 2, 3, 4] }
+      },
+      "refino": ["varanda", "aceita_pet", "elevador", "vaga_coberta", "reformado", "armarios"]
+    },
+    {
+      "id": "compra-apartamento", "intencao": "comprar", "tipo": "apartamento",
+      "obrigatorios": ["localizacao", "orcamento.max", "porte.quartos_min"],
+      "padroes": { "orcamento.base": "venda", "porte.quartos_min": 0 },
+      "faixas": { "orcamento.max": [80000, 30000000], "porte.area_min": [15, 1000] },
+      "perguntas": {
+        "localizacao": { "texto": "Em que região você quer comprar?", "opcoes": "dos_resultados" },
+        "orcamento.max": { "texto": "Até que valor você pode chegar?", "opcoes": [400000, 700000, 1000000, 1500000] },
+        "porte.quartos_min": { "texto": "Quantos quartos, no mínimo?", "opcoes": [1, 2, 3, 4] }
+      },
+      "refino": ["aceita_financiamento", "varanda", "reformado", "vista_livre", "elevador", "dce"]
+    },
+    {
+      "id": "aluguel-casa", "intencao": "alugar", "tipo": "casa",
+      "obrigatorios": ["localizacao", "orcamento.max", "porte.quartos_min"],
+      "padroes": { "orcamento.base": "aluguel", "porte.quartos_min": 0 },
+      "faixas": { "orcamento.max": [500, 80000], "porte.area_min": [30, 3000] },
+      "perguntas": {
+        "localizacao": { "texto": "Em que região você quer morar?", "opcoes": "dos_resultados" },
+        "orcamento.max": { "texto": "Até quanto de aluguel por mês?", "opcoes": [3000, 5000, 8000, 12000] },
+        "porte.quartos_min": { "texto": "Quantos quartos, no mínimo?", "opcoes": [2, 3, 4, 5] }
+      },
+      "refino": ["quintal", "piscina", "condominio_fechado", "aceita_pet", "churrasqueira"]
+    },
+    {
+      "id": "compra-casa", "intencao": "comprar", "tipo": "casa",
+      "obrigatorios": ["localizacao", "orcamento.max", "porte.quartos_min"],
+      "padroes": { "orcamento.base": "venda", "porte.quartos_min": 0 },
+      "faixas": { "orcamento.max": [80000, 50000000], "porte.area_min": [30, 3000] },
+      "perguntas": {
+        "localizacao": { "texto": "Em que região você quer comprar?", "opcoes": "dos_resultados" },
+        "orcamento.max": { "texto": "Até que valor você pode chegar?", "opcoes": [700000, 1200000, 2000000, 3500000] },
+        "porte.quartos_min": { "texto": "Quantos quartos, no mínimo?", "opcoes": [2, 3, 4, 5] }
+      },
+      "refino": ["condominio_fechado", "piscina", "quintal", "aceita_financiamento", "churrasqueira"]
+    },
+    {
+      "id": "aluguel-kitnet", "intencao": "alugar", "tipo": "kitnet",
+      "obrigatorios": ["localizacao", "orcamento.max"],
+      "padroes": { "orcamento.base": "aluguel" },
+      "faixas": { "orcamento.max": [400, 15000], "porte.area_min": [12, 120] },
+      "perguntas": {
+        "localizacao": { "texto": "Em que região você quer morar?", "opcoes": "dos_resultados" },
+        "orcamento.max": { "texto": "Até quanto de aluguel por mês?", "opcoes": [1200, 1800, 2500, 3500] }
+      },
+      "refino": ["aceita_pet", "elevador", "armarios", "ar_condicionado", "portaria_24h"]
+    },
+    {
+      "id": "compra-kitnet", "intencao": "comprar", "tipo": "kitnet",
+      "obrigatorios": ["localizacao", "orcamento.max"],
+      "padroes": { "orcamento.base": "venda" },
+      "faixas": { "orcamento.max": [60000, 3000000], "porte.area_min": [12, 120] },
+      "perguntas": {
+        "localizacao": { "texto": "Em que região você quer comprar?", "opcoes": "dos_resultados" },
+        "orcamento.max": { "texto": "Até que valor você pode chegar?", "opcoes": [200000, 300000, 450000, 600000] }
+      },
+      "refino": ["aceita_financiamento", "elevador", "reformado", "armarios"]
+    },
+    {
+      "id": "base-alugar", "intencao": "alugar", "tipo": "*",
+      "obrigatorios": ["localizacao", "orcamento.max"],
+      "padroes": { "orcamento.base": "aluguel" },
+      "faixas": { "orcamento.max": [400, 100000] },
+      "perguntas": {
+        "localizacao": { "texto": "Em que região?", "opcoes": "dos_resultados" },
+        "orcamento.max": { "texto": "Até quanto de aluguel por mês?", "opcoes": [2000, 4000, 7000, 12000] }
+      },
+      "refino": ["varanda", "elevador", "reformado", "vista_livre"]
+    },
+    {
+      "id": "base-comprar", "intencao": "comprar", "tipo": "*",
+      "obrigatorios": ["localizacao", "orcamento.max"],
+      "padroes": { "orcamento.base": "venda" },
+      "faixas": { "orcamento.max": [50000, 50000000] },
+      "perguntas": {
+        "localizacao": { "texto": "Em que região?", "opcoes": "dos_resultados" },
+        "orcamento.max": { "texto": "Até que valor você pode chegar?", "opcoes": [300000, 600000, 1200000, 2500000] }
+      },
+      "refino": ["aceita_financiamento", "reformado", "vista_livre", "varanda"]
+    }
+  ]
+}

@@ -11,7 +11,7 @@ no plugin `centralizai`. Qualquer IA lê este arquivo (`CLAUDE.md` é só `@AGEN
 
 ## Estado
 
-Plano aprovado? **Ainda não.** O plano dos três MVPs e a etapa 0 estão em `prototipo/` esperando o ok do dono. Nenhum código de aplicação existe ainda.
+Plano aprovado pelo dono em 2026-11-19. **MVP 1 em construção** (versão 0.2.0): núcleo, testes e telas existem; falta o deploy. O plano está em `prototipo/` e fica como história.
 
 ## A regra que não se quebra
 
@@ -19,7 +19,7 @@ Plano aprovado? **Ainda não.** O plano dos três MVPs e a etapa 0 estão em `pr
 
 ## Como rodar
 
-Ainda não há o que rodar. Quando houver (MVP 1), em PowerShell:
+Em PowerShell, na raiz do repositório. O app abre em http://localhost:3210.
 
 ```powershell
 npm install
@@ -32,6 +32,27 @@ npm run dev
 ```powershell
 npm test
 ```
+
+Regerar o seed de imóveis fictícios (determinístico):
+
+```powershell
+npm run seed
+```
+
+## Onde está cada coisa
+
+| Pasta | O que tem |
+|---|---|
+| `nucleo/` | TypeScript puro, sem tela nem rede: `tipos.ts` (ficha de busca), `fluxo/motor.ts` (máquina de estados), `interpretador/` (regras e IA), `aderencia.ts` (filtro, pontuação, etiquetas, filtros dinâmicos), `fontes/` (`PropertySource`) |
+| `config/` | `dicionario/termos.json`, `templates/templates.json`, `prompts/extrair.ts`: editáveis sem mexer no código |
+| `dados/seed/` | 300 imóveis fictícios, gerados por `scripts/gerar-seed.mjs` |
+| `dados/privado/` | fora do git: a fonte privada do dono, ligada por `AI_FONTE_PRIVADA=1` |
+| `app/` | telas (chat, resultados, imóvel, favoritos) e as rotas `api/conversa` e `api/buscar` |
+| `testes/` | unidade do núcleo e as 10 conversas roteirizadas |
+
+## IA
+
+`AI_PROVIDER` escolhe quem interpreta a mensagem: `regras` (padrão, sem chave), `anthropic` ou `gateway`. Ver `env.exemplo`. Com IA ligada, qualquer falha cai nas regras. O caminho com IA ainda não foi testado com chave real.
 
 ## Convenções deste projeto
 

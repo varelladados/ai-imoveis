@@ -1,0 +1,101 @@
+{
+  "_leia_me": "Dicionário de sinônimos do mercado imobiliário do DF. Editável à mão. t = termo; v = variantes; r = registro (jargao | popular); k = o que o termo preenche (intencao, tipo, bairro, regiao, attr, set, ambiguo). Acento e maiúscula não importam: tudo é normalizado na leitura. origem: seed (este arquivo), manual ou aprendida.",
+  "praca": "DF",
+  "termos": [
+    { "t": "alugar", "v": ["aluguel", "alugo", "locação", "locar", "pra alugar", "para alugar", "de aluguel", "arrendar"], "r": "popular", "k": "intencao", "val": "alugar" },
+    { "t": "comprar", "v": ["compra", "à venda", "a venda", "pra comprar", "para comprar", "adquirir", "casa própria", "investir"], "r": "popular", "k": "intencao", "val": "comprar" },
+
+    { "t": "apartamento", "v": ["apê", "ap", "apto", "apartamentos", "aptos"], "r": "popular", "k": "tipo", "val": "apartamento" },
+    { "t": "casa", "v": ["casas", "sobrado", "casa térrea", "residência"], "r": "popular", "k": "tipo", "val": "casa" },
+    { "t": "kitnet", "v": ["jk", "quitinete", "kit", "kitinete", "studio", "estúdio", "flat", "loft", "quarto e sala conjugado"], "r": "jargao", "k": "tipo", "val": "kitnet" },
+    { "t": "cobertura", "v": ["coberturas", "cobertura duplex", "penthouse"], "r": "popular", "k": "tipo", "val": "cobertura" },
+    { "t": "lote", "v": ["terreno", "lotes", "terrenos", "chácara"], "r": "popular", "k": "tipo", "val": "lote" },
+    { "t": "sala comercial", "v": ["salas comerciais", "escritório", "consultório", "ponto comercial", "loja"], "r": "popular", "k": "tipo", "val": "sala_comercial" },
+    { "t": "projeção", "v": ["projecao"], "r": "jargao", "k": "tipo", "val": "lote", "nota": "No Plano Piloto, projeção é o terreno de um bloco residencial inteiro." },
+
+    { "t": "plano piloto", "v": ["plano", "no plano", "brasília mesmo"], "r": "popular", "k": "regiao", "val": "Plano Piloto" },
+    { "t": "asa norte", "v": ["sqn", "cln", "shcgn", "scln", "norte do plano", "asa n"], "r": "jargao", "k": "bairro", "val": "Asa Norte" },
+    { "t": "asa sul", "v": ["sqs", "cls", "shigs", "scls", "sul do plano", "asa s"], "r": "jargao", "k": "bairro", "val": "Asa Sul" },
+    { "t": "sudoeste", "v": ["sqsw", "ccsw", "qrsw", "qmsw", "setor sudoeste", "sudoeste econômico"], "r": "jargao", "k": "bairro", "val": "Sudoeste" },
+    { "t": "noroeste", "v": ["sqnw", "clnw", "setor noroeste"], "r": "jargao", "k": "bairro", "val": "Noroeste" },
+    { "t": "cruzeiro", "v": ["cruzeiro novo", "cruzeiro velho", "shces"], "r": "popular", "k": "bairro", "val": "Cruzeiro" },
+    { "t": "vila planalto", "v": [], "r": "popular", "k": "bairro", "val": "Vila Planalto" },
+    { "t": "lago sul", "v": ["shis", "qi do lago sul"], "r": "jargao", "k": "bairro", "val": "Lago Sul" },
+    { "t": "lago norte", "v": ["shin", "península norte"], "r": "jargao", "k": "bairro", "val": "Lago Norte" },
+    { "t": "jardim botânico", "v": ["jb", "jardim botanico"], "r": "popular", "k": "bairro", "val": "Jardim Botânico" },
+    { "t": "águas claras", "v": ["aguas claras"], "r": "popular", "k": "bairro", "val": "Águas Claras" },
+    { "t": "guará", "v": ["guara", "guará 1", "guará 2", "guará i", "guará ii"], "r": "popular", "k": "bairro", "val": "Guará" },
+    { "t": "park sul", "v": ["parksul", "smas"], "r": "popular", "k": "bairro", "val": "Park Sul" },
+    { "t": "taguatinga", "v": ["tagua", "taguatinga norte", "taguatinga sul", "taguatinga centro"], "r": "popular", "k": "bairro", "val": "Taguatinga" },
+    { "t": "sobradinho", "v": ["sobradinho 1", "sobradinho 2"], "r": "popular", "k": "bairro", "val": "Sobradinho" },
+    { "t": "vicente pires", "v": ["vp"], "r": "popular", "k": "bairro", "val": "Vicente Pires" },
+    { "t": "setor comercial sul", "v": ["scs"], "r": "jargao", "k": "bairro", "val": "Setor Comercial Sul" },
+
+    { "t": "varanda gourmet", "v": ["sacada gourmet", "varanda com churrasqueira"], "r": "jargao", "k": "attr", "chave": "varanda_gourmet", "val": true },
+    { "t": "varanda", "v": ["sacada", "terraço", "varandinha", "varandão"], "r": "popular", "k": "attr", "chave": "varanda", "val": true },
+    { "t": "aceita pet", "v": ["pet", "pets", "cachorro", "gato", "animal", "animais", "bichos", "pet friendly", "tenho cachorro", "tenho gato", "tenho um cachorro", "tenho um gato"], "r": "popular", "k": "attr", "chave": "aceita_pet", "val": true, "peso": "obrigatorio" },
+    { "t": "mobiliado", "v": ["mobiliada", "com móveis", "todo mobiliado", "porteira fechada"], "r": "popular", "k": "attr", "chave": "mobilia", "val": "sim" },
+    { "t": "semimobiliado", "v": ["semi mobiliado", "semi-mobiliado", "semimobiliada", "com armários e eletros"], "r": "jargao", "k": "attr", "chave": "mobilia", "val": "semi" },
+    { "t": "sem mobília", "v": ["sem móveis", "vazio", "não mobiliado", "sem mobilia"], "r": "popular", "k": "attr", "chave": "mobilia", "val": "nao", "peso": "obrigatorio" },
+    { "t": "dce", "v": ["dependência de empregada", "dependência completa", "quarto de empregada", "dependência", "quarto de serviço"], "r": "jargao", "k": "attr", "chave": "dce", "val": true },
+    { "t": "elevador", "v": ["elevadores", "com elevador"], "r": "popular", "k": "attr", "chave": "elevador", "val": true },
+    { "t": "sem elevador", "v": ["de escada", "só escada"], "r": "popular", "k": "attr", "chave": "elevador", "val": false, "peso": "obrigatorio" },
+    { "t": "nascente", "v": ["sol da manhã", "sol de manhã", "sol nascente", "bate sol de manhã"], "r": "jargao", "k": "attr", "chave": "posicao_solar", "val": "nascente" },
+    { "t": "poente", "v": ["sol da tarde", "sol de tarde", "sol poente"], "r": "jargao", "k": "attr", "chave": "posicao_solar", "val": "poente" },
+    { "t": "vazado", "v": ["vazada", "frente e fundo", "ventilação cruzada", "bem ventilado"], "r": "jargao", "k": "attr", "chave": "vazado", "val": true },
+    { "t": "vista livre", "v": ["vista aberta", "vista desimpedida", "vista definitiva", "vista pro verde"], "r": "jargao", "k": "attr", "chave": "vista_livre", "val": true },
+    { "t": "reformado", "v": ["reformada", "reforma nova", "todo reformado", "repaginado"], "r": "popular", "k": "attr", "chave": "reformado", "val": true },
+    { "t": "vaga coberta", "v": ["garagem coberta", "vaga na garagem coberta"], "r": "popular", "k": "attr", "chave": "vaga_coberta", "val": true },
+    { "t": "vaga solta", "v": ["vaga livre", "vaga independente", "vagas soltas"], "r": "jargao", "k": "attr", "chave": "vaga_presa", "val": false },
+    { "t": "vaga presa", "v": ["vagas presas", "vaga de gaveta"], "r": "jargao", "k": "attr", "chave": "vaga_presa", "val": true },
+    { "t": "ar condicionado", "v": ["ar-condicionado", "split", "climatizado"], "r": "popular", "k": "attr", "chave": "ar_condicionado", "val": true },
+    { "t": "armários", "v": ["armarios", "armários planejados", "planejados", "móveis planejados", "marcenaria"], "r": "popular", "k": "attr", "chave": "armarios", "val": true },
+    { "t": "piscina", "v": ["piscinas"], "r": "popular", "k": "attr", "chave": "piscina", "val": true },
+    { "t": "churrasqueira", "v": ["área de churrasco", "espaço gourmet"], "r": "popular", "k": "attr", "chave": "churrasqueira", "val": true },
+    { "t": "academia", "v": ["fitness", "sala de ginástica"], "r": "popular", "k": "attr", "chave": "academia", "val": true },
+    { "t": "quintal", "v": ["área verde", "gramado"], "r": "popular", "k": "attr", "chave": "quintal", "val": true },
+    { "t": "condomínio fechado", "v": ["em condomínio", "condominio fechado"], "r": "popular", "k": "attr", "chave": "condominio_fechado", "val": true },
+    { "t": "portaria 24h", "v": ["portaria 24 horas", "porteiro 24h", "portaria", "porteiro"], "r": "popular", "k": "attr", "chave": "portaria_24h", "val": true },
+    { "t": "térreo", "v": ["terreo", "andar térreo", "no térreo"], "r": "popular", "k": "attr", "chave": "terreo", "val": true },
+    { "t": "duplex", "v": ["dois andares"], "r": "jargao", "k": "attr", "chave": "duplex", "val": true },
+    { "t": "sobre comércio", "v": ["em cima de comércio", "sobreloja", "comercial com residência"], "r": "jargao", "k": "attr", "chave": "sobre_comercio", "val": true },
+    { "t": "lâmina", "v": ["lamina"], "r": "jargao", "k": "attr", "chave": "vazado", "val": true, "nota": "No Plano Piloto, prédio em lâmina tem unidades de frente e fundo, vazadas." },
+    { "t": "sem fiador", "v": ["sem precisar de fiador", "não tenho fiador"], "r": "popular", "k": "attr", "chave": "garantia", "val": "sem_fiador", "peso": "obrigatorio" },
+    { "t": "seguro fiança", "v": ["seguro-fiança", "seguro fianca"], "r": "jargao", "k": "attr", "chave": "garantia", "val": "seguro_fianca" },
+    { "t": "caução", "v": ["caucao", "depósito caução"], "r": "jargao", "k": "attr", "chave": "garantia", "val": "caucao" },
+    { "t": "aceita financiamento", "v": ["financiável", "financiavel", "financiar", "financiamento", "financiado"], "r": "jargao", "k": "attr", "chave": "aceita_financiamento", "val": true, "peso": "obrigatorio" },
+    { "t": "aceita fgts", "v": ["fgts", "usar fgts", "com fgts"], "r": "jargao", "k": "attr", "chave": "aceita_fgts", "val": true, "peso": "obrigatorio" },
+    { "t": "aceita permuta", "v": ["permuta", "aceita troca"], "r": "jargao", "k": "attr", "chave": "aceita_permuta", "val": true },
+
+    { "t": "suíte", "v": ["suite", "suítes", "suites", "quarto com banheiro"], "r": "popular", "k": "set", "caminho": "porte.suites_min", "val": 1 },
+    { "t": "garagem", "v": ["vaga", "com vaga", "vaga de garagem", "estacionamento"], "r": "popular", "k": "set", "caminho": "porte.vagas_min", "val": 1 },
+    { "t": "com condomínio", "v": ["com condominio", "no total", "tudo incluso", "pacote", "com condomínio e iptu", "total do mês", "com tudo"], "r": "popular", "k": "set", "caminho": "orcamento.base", "val": "pacote" },
+    { "t": "quarto e sala", "v": ["1 quarto e sala", "qs"], "r": "jargao", "k": "set", "caminho": "porte.quartos_min", "val": 1 },
+
+    { "t": "perto do metrô", "v": ["perto do metro", "próximo ao metrô", "proximo ao metro", "perto de metrô", "perto de metro", "ao lado do metrô", "do lado do metrô", "perto da estação"], "r": "popular", "k": "ambiguo", "contexto": "localizacao", "pergunta": "Para mim, \"perto do metrô\" pode ser várias coisas. Para você é:", "opcoes": [
+      { "rotulo": "até 5 min a pé (400 m)", "ops": [{ "op": "add", "caminho": "localizacao.referencias", "valor": { "texto": "metrô", "raio_m": 400 } }] },
+      { "rotulo": "até 10 min a pé (800 m)", "ops": [{ "op": "add", "caminho": "localizacao.referencias", "valor": { "texto": "metrô", "raio_m": 800 } }] },
+      { "rotulo": "até 15 min a pé (1,2 km)", "ops": [{ "op": "add", "caminho": "localizacao.referencias", "valor": { "texto": "metrô", "raio_m": 1200 } }] }
+    ] },
+    { "t": "andar alto", "v": ["andares altos", "bem alto", "no alto"], "r": "popular", "k": "ambiguo", "contexto": "atributos", "pergunta": "\"Andar alto\" para você começa em qual andar?", "opcoes": [
+      { "rotulo": "do 3º para cima", "ops": [{ "op": "attr", "chave": "andar_min", "valor": 3, "peso": "obrigatorio" }] },
+      { "rotulo": "do 5º para cima", "ops": [{ "op": "attr", "chave": "andar_min", "valor": 5, "peso": "obrigatorio" }] },
+      { "rotulo": "do 10º para cima", "ops": [{ "op": "attr", "chave": "andar_min", "valor": 10, "peso": "obrigatorio" }] }
+    ] },
+    { "t": "espaçoso", "v": ["espacoso", "amplo", "bem grande", "espaçosa", "ampla"], "r": "popular", "k": "ambiguo", "contexto": "porte", "pergunta": "\"Espaçoso\" para você é a partir de quanto?", "opcoes": [
+      { "rotulo": "70 m² ou mais", "ops": [{ "op": "set", "caminho": "porte.area_min", "valor": 70 }] },
+      { "rotulo": "100 m² ou mais", "ops": [{ "op": "set", "caminho": "porte.area_min", "valor": 100 }] },
+      { "rotulo": "150 m² ou mais", "ops": [{ "op": "set", "caminho": "porte.area_min", "valor": 150 }] }
+    ] },
+    { "t": "com móveis ou sem", "v": ["mobília", "mobilia"], "r": "popular", "k": "ambiguo", "contexto": "atributos", "pergunta": "Sobre a mobília, o que você quer?", "opcoes": [
+      { "rotulo": "todo mobiliado", "ops": [{ "op": "attr", "chave": "mobilia", "valor": "sim", "peso": "obrigatorio" }] },
+      { "rotulo": "só armários (semimobiliado)", "ops": [{ "op": "attr", "chave": "mobilia", "valor": "semi", "peso": "obrigatorio" }] },
+      { "rotulo": "vazio", "ops": [{ "op": "attr", "chave": "mobilia", "valor": "nao", "peso": "obrigatorio" }] }
+    ] },
+    { "t": "centro", "v": ["região central", "bem localizado"], "r": "popular", "k": "ambiguo", "contexto": "localizacao", "pergunta": "\"Centro\", em Brasília, cada um chama de um jeito. Você quer dizer:", "opcoes": [
+      { "rotulo": "Plano Piloto inteiro", "ops": [{ "op": "add", "caminho": "localizacao.regioes", "valor": "Plano Piloto" }] },
+      { "rotulo": "só Asa Sul e Asa Norte", "ops": [{ "op": "add", "caminho": "localizacao.bairros", "valor": "Asa Sul" }, { "op": "add", "caminho": "localizacao.bairros", "valor": "Asa Norte" }] },
+      { "rotulo": "centro de Taguatinga", "ops": [{ "op": "add", "caminho": "localizacao.bairros", "valor": "Taguatinga" }] }
+    ] }
+  ]
+}

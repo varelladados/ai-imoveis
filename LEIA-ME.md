@@ -2,7 +2,7 @@
 
 > Seu buscador definitivo de imóveis.
 
-Versão 0.1.0 · nasceu em 2026-11-19 do protótipo `26.11.19-PRO-DIG-001-ai-imoveis-plano-mvps-b878` do trem projetos (CentralizAI).
+Versão 0.2.0 · nasceu em 2026-11-19 do protótipo `26.11.19-PRO-DIG-001-ai-imoveis-plano-mvps-b878` do trem projetos (CentralizAI).
 
 Web app de celular em que a pessoa procura imóvel para comprar ou alugar conversando. Busca por texto livre os portais já têm. Aqui a diferença é a conversa guiada:
 
@@ -15,13 +15,31 @@ Mercado inicial: Brasília/DF. Os imóveis do repositório são fictícios.
 
 ## Estado
 
-Plano escrito, esperando aprovação. Ainda não há código de aplicação.
+MVP 1 em construção: a conversa guiada funciona com interpretador por regras, sem conta e sem IA paga.
 
 | MVP | O que entrega | Prazo proposto |
 |---|---|---|
 | 1 | a conversa funciona, sem conta e sem IA paga | 19/11/2026 |
 | 2 | login, memória, IA, admin do dicionário | 26/11/2026 |
 | 3 | paridade com os portais e primeira fonte real | 10/12/2026 |
+
+## Como rodar
+
+Em PowerShell:
+
+```powershell
+npm install
+```
+
+```powershell
+npm run dev
+```
+
+Abra http://localhost:3210. Para os testes:
+
+```powershell
+npm test
+```
 
 ## Por onde começar
 
