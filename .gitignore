@@ -16,3 +16,10 @@ desktop.ini
 .env.*
 *.pem
 *.key
+
+# fonte privada: anuncios reais nunca entram no git
+dados/privado/
+# next
+.next/
+out/
+.vercel/
