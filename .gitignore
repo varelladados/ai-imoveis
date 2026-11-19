@@ -1,0 +1,18 @@
+# projeto do CentralizAI: comece pequeno; acrescente o do stack quando ele existir
+__pycache__/
+*.pyc
+node_modules/
+dist/
+build/
+.venv/
+venv/
+cache/
+*.log
+Thumbs.db
+desktop.ini
+.DS_Store
+# nunca: segredo
+.env
+.env.*
+*.pem
+*.key
