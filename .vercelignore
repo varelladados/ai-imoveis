@@ -1,0 +1,5 @@
+dados/privado/
+node_modules/
+.next/
+.env
+.env.*
