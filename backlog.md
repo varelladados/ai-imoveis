@@ -27,7 +27,7 @@ O detalhe de cada MVP está em [prototipo/plano-3-mvps.md](prototipo/plano-3-mvp
 - [x] Favoritos com anotação e memória de ambiguidade, no aparelho
 - [x] Manifesto de PWA
 - [x] **Essencial** 10 conversas roteirizadas em teste automático
-- [ ] Deploy na Vercel (pede ok do dono na hora)
+- [x] Deploy na Vercel: https://ai-imoveis.vercel.app (2026-11-20)
 - [ ] Conferir as telas no tema claro e num celular de verdade
 - [ ] Conferir a fonte privada (`AI_FONTE_PRIVADA=1`) rodando local
 - [ ] Ícones PNG para instalação no iPhone (hoje o ícone é SVG)

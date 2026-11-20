@@ -11,7 +11,7 @@ no plugin `centralizai`. Qualquer IA lê este arquivo (`CLAUDE.md` é só `@AGEN
 
 ## Estado
 
-Plano aprovado pelo dono em 2026-11-19. **MVP 1 em construção** (versão 0.2.0): núcleo, testes e telas existem; falta o deploy. O plano está em `prototipo/` e fica como história.
+Plano aprovado pelo dono em 2026-11-19. **MVP 1 no ar** (versão 0.2.0) em https://ai-imoveis.vercel.app, projeto `ai-imoveis` no time `mr-brinks` da Vercel, ligado a este repositório. O plano está em `prototipo/` e fica como história.
 
 ## A regra que não se quebra
 

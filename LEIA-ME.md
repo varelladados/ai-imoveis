@@ -15,7 +15,7 @@ Mercado inicial: Brasília/DF. Os imóveis do repositório são fictícios.
 
 ## Estado
 
-MVP 1 em construção: a conversa guiada funciona com interpretador por regras, sem conta e sem IA paga.
+**MVP 1 no ar:** https://ai-imoveis.vercel.app (publicado em 2026-11-20). A conversa guiada funciona com interpretador por regras, sem conta e sem IA paga. Os imóveis são fictícios.
 
 | MVP | O que entrega | Prazo proposto |
 |---|---|---|

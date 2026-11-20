@@ -19,3 +19,5 @@ Uma linha por decisão, da mais antiga para a mais nova. Não se apaga linha; de
 | 2026-11-19 | IA pela AI SDK (`ai` + `@ai-sdk/anthropic`), que atende Claude API direta e Vercel AI Gateway com o mesmo código | construção | o dono pediu as duas opções prontas |
 | 2026-11-19 | Atributo obrigatório que o anúncio não informa não passa no filtro; desejável não informado vira etiqueta "não informa" | construção | o app não promete o que o anúncio não diz |
 | 2026-11-19 | Fonte privada ligada por `AI_FONTE_PRIVADA=1` e lida de `dados/privado/imoveis.json` | construção | os anúncios reais ficam só no computador do dono |
+| 2026-11-20 | MVP 1 publicado na Vercel (time `mr-brinks`, plano Hobby), endereço https://ai-imoveis.vercel.app, deploy automático a cada push na `master` | dono | "Sim, publica" |
+| 2026-11-20 | Deploy feito pela CLI da Vercel, com `npx.cmd`; `.vercelignore` impede `dados/privado/` de subir | construção | a conexão MCP da Vercel não ganhou acesso ao time, mesmo após duas aprovações; o PowerShell bloqueia `npx.ps1` |
