@@ -28,9 +28,9 @@ O detalhe de cada MVP está em [prototipo/plano-3-mvps.md](prototipo/plano-3-mvp
 - [x] Manifesto de PWA
 - [x] **Essencial** 10 conversas roteirizadas em teste automático
 - [x] Deploy na Vercel: https://ai-imoveis.vercel.app (2026-11-20)
-- [ ] Conferir as telas no tema claro e num celular de verdade
-- [ ] Conferir a fonte privada (`AI_FONTE_PRIVADA=1`) rodando local
-- [ ] Ícones PNG para instalação no iPhone (hoje o ícone é SVG)
+- [x] Conferir as telas no tema claro, em tamanho de celular (2026-11-20); falta um celular de verdade
+- [x] Conferir a fonte privada (`AI_FONTE_PRIVADA=1`) rodando local: teste `testes/privada.local.test.ts`, que só roda onde `dados/privado/` existe
+- [x] Ícones PNG para instalação no iPhone: `npm run icones` gera 192, 512, 180 e máscara
 
 ## MVP 2: o produto completo (0.3.0)
 

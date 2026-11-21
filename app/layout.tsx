@@ -4,6 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "AÍ! Imóveis",
   description: "Seu buscador definitivo de imóveis. Conte o que procura e a busca se ajusta na conversa.",
+  icons: { icon: [{ url: "/icone.svg", type: "image/svg+xml" }, { url: "/icone-192.png", sizes: "192x192", type: "image/png" }], apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }] },
   appleWebApp: { capable: true, title: "AÍ! Imóveis", statusBarStyle: "default" },
 };
 export const viewport: Viewport = {
